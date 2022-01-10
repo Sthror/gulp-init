@@ -1,0 +1,26 @@
+.btn {
+  border: 0;
+  cursor: pointer;
+  display: block;
+  font-size: $font-m;
+  font-weight: 800;
+  padding: 12px 25px;
+  text-decoration: none;
+  width: fit-content;
+  @media ($tablet-screen) {
+    font-size: $font-l;
+  }
+
+  @include make-button;
+  @include create-theme-buttons($theme-pallete);
+  @include create-sizes-buttons($btn-sizes);
+
+  &:disabled {
+    @include make-button($color-btn-disabled);
+
+    &:hover {
+      background-color: transparentize($color-btn-disabled, .25);
+      cursor: default;
+    }
+  }
+}

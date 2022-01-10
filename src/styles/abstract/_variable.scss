@@ -1,0 +1,45 @@
+// переменные цветов
+
+$black: #373737;
+$true-black: #000;
+$color-shadow: rgba(0, 0, 0, .08);
+$color-form-border: rgba(0, 0, 0, .04);
+$title-color: #111;
+$white: #fff;
+$red: #d75347;
+$color-blue: #010102;
+$color-grey-light: #f9f9f9;
+$color-btn-disabled: #ebebeb;
+$color-green: #27b96b;
+
+// переменные шрифтов
+
+$font-xs: 12px;
+$font-s: 14px;
+$font-m: 16px;
+$font-l: 18px;
+$font-xl: 22px;
+$font-xxl: 26px;
+$font-xxxl: 30px;
+$rem: $font-l;
+
+// переменные медиазапросов
+
+$desctop-screen: 'min-width: 1440px';
+$large-screen: 'min-width: 1200px';
+$large-tablet-screen: 'min-width: 768px';
+$tablet-screen: 'min-width: 550px';
+
+// кнопки
+
+$theme-pallete: (
+  primary: $black,
+  success: $color-green,
+  light: $white,
+  danger: $red
+);
+
+$btn-sizes: (
+  small: $font-s,
+  big: $font-xxl
+);

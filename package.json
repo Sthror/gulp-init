@@ -1,0 +1,39 @@
+{
+  "name": "my-first-gulp-project",
+  "version": "1.0.0",
+  "description": "учусь работать с gulp",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "cross-env NODE_ENV=serve gulp",
+    "build": "cross-env NODE_ENV=build gulp build"
+  },
+  "keywords": [],
+  "author": "S.Batalov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "browser-sync": "^2.27.7",
+    "cross-env": "^7.0.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-del": "*",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-pxtorem": "^3.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-normalize-scss": "^8.1.2",
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

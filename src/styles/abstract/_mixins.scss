@@ -1,0 +1,36 @@
+@mixin make-button ($b-color: $color-blue, $color: $white, $radius: 6px) {
+  background-color: $b-color;
+  border-radius: $radius;
+  color: $color;
+
+  &:hover {
+    background-color: darken($b-color, 20);
+  }
+}
+
+@mixin create-theme-buttons($theme-pallete) {
+  @each $type-btn, $value in $theme-pallete {
+
+    &--#{$type-btn} {
+      background-color: $value;
+      @if($type-btn == 'light') {
+        color: $red;
+      }
+
+      &:hover {
+        background-color: darken($value, 20);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@mixin create-sizes-buttons($btn-sizes) {
+
+  @each $size, $value in $btn-sizes {
+
+    &--#{$size} {
+      font-size: $value;
+    }
+  }
+}
